@@ -98,11 +98,6 @@ bot.on('message', function (message) {
     message.channel.send("Heuu .. Bah c'est Noah. Mdrr .")  
 }})
 
-bot.on('message', message => {
-    if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes : \n - .help \n - Comming Sooooooooon ");
-    }
-
     if (message.content === prefix + "r"){
         var embed = new Discord.RichEmbed()
             .setTitle("Règlement : ")
@@ -118,8 +113,6 @@ bot.on('message', message => {
             .setFooter("Amusez vous bien !")
         message.channel.sendEmbed(embed);
     }
-
-})
 bot.on('message', message => {
     if (message.content === prefix + "help"){
         var embed = new Discord.RichEmbed()
@@ -132,7 +125,3 @@ bot.on('message', message => {
     }
 
 })
-
-
- 
-
