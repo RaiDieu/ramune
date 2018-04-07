@@ -98,6 +98,11 @@ bot.on('message', function (message) {
     message.channel.send("Heuu .. Bah c'est Noah. Mdrr .")  
 }})
 
+bot.on('message', message => {
+    if (message.content === prefix + "test"){
+        message.channel.sendMessage("blabla");
+    }
+
     if (message.content === prefix + "r"){
         var embed = new Discord.RichEmbed()
             .setTitle("Règlement : ")
@@ -113,15 +118,16 @@ bot.on('message', function (message) {
             .setFooter("Amusez vous bien !")
         message.channel.sendEmbed(embed);
     }
-bot.on('message', message => {
-    if (message.content === prefix + "help"){
-        var embed = new Discord.RichEmbed()
-            .setTitle("Commande disponible :")
-            .setDescription(".help")
-            .setDescription("comming soon !")
-            .setThumbnail("https://cdn.discordapp.com/attachments/431694340830789645/431977745145266176/tumblr_o4ug71pfSH1tydz8to1_540.gif")
-            .setColor("0x2A933C")
-        message.channel.sendEmbed(embed);
-    }
-
+    bot.on('message', message => {
+        if (message.content === prefix + "help"){
+            var embed = new Discord.RichEmbed()
+                .setTitle("Commande disponible :")
+                .setDescription(".help")
+                .setDescription("comming soon !")
+                .setThumbnail("https://cdn.discordapp.com/attachments/431694340830789645/431977745145266176/tumblr_o4ug71pfSH1tydz8to1_540.gif")
+                .setColor("0x2A933C")
+            message.channel.sendEmbed(embed);
+        }
+    
+    })
 })
