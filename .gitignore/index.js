@@ -129,5 +129,15 @@ bot.on('message', message => {
             message.channel.sendEmbed(embed);
         }
     
-    })
-})
+
+        if (message.content === prefix + "roless"){
+            var embed = new Discord.RichEmbed()
+               .setDescription("@Noir \n @Murmure blanc \n @Vanille\n @Bleu Aquarius\n @Tentation turquoise \n @Pointe Pacifique \n @Vert victorieux \n @Or vert \n @Pépite de chocolat \n @Fruits des bois \n @Melon mambo \n @Rose régal\n @Rouge\n @Tango mandarine \n @Tarte au potiron \n @Moutarde forte \n @Narcisse délice")
+               .setColor("0x2A933C")
+        message.channel.sendEmbed(embed);
+}})
+bot.on('message', function (message) {
+    if(message.content === "roles1") {
+    message.channel.send("Voici les rôles que vous pouvez avoir, ce n'est qu'une couleur qui viendra enbellire votre pseudo.\n La commande est très simple, vous devez simplement écrire ^^roleme et la couleur que vous souhaitez. \n \n Comme ceci : ^^roleme [ nom du rôles ]\n \n Voici la palette de couleurs à votre disposition :")  
+
+}})})
