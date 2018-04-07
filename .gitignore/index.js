@@ -17,22 +17,10 @@ bot.on('guild.member.add', member => {
     member.addRole(role)
 })
 bot.on('message', function (message) {
-    if(message.content === "Qui est Rai ?") {
-    message.channel.send('Le Fondateur !')
+    if(message.content === "botRamune") {
+    message.channel.send('Bot positif prés à utilisation.')
  
 }})
-
-bot.on('message', function (message) {
-    if(message.content === "Qui est Uchiro ?") {
-    message.channel.send('La Co-Fondatrice ou presque :D.')
-    
-}})
-bot.on('message', function (message) {
-    if(message.content === "Qui est BNI ?") {
-    message.channel.send("L'un des modo pour pas dire LE modo le plus appliqué dans son boulot de Modérateur <3 .")
-    
-}})
-
 bot.on('message', function (message) {
     if(message.content === "PUTIN") {
     message.channel.send('Surveille ton language.')  
@@ -128,16 +116,5 @@ bot.on('message', message => {
                 .setColor("0x2A933C")
             message.channel.sendEmbed(embed);
         }
-    
+})})
 
-        if (message.content === prefix + "roles"){
-            var embed = new Discord.RichEmbed()
-               .setDescription("@Noir \n @Murmure blanc \n @Vanille\n @Bleu Aquarius\n @Tentation turquoise \n @Pointe Pacifique \n @Vert victorieux \n @Or vert \n @Pépite de chocolat \n @Fruits des bois \n @Melon mambo \n @Rose régal\n @Rouge\n @Tango mandarine \n @Tarte au potiron \n @Moutarde forte \n @Narcisse délice")
-               .setColor("0x2A933C")
-        message.channel.sendEmbed(embed);
-}})
-bot.on('message', function (message) {
-    if(message.content === "!lol") {
-    message.channel.send("Voici les rôles que vous pouvez avoir, ce n'est qu'une couleur qui viendra enbellire votre pseudo.\n La commande est très simple, vous devez simplement écrire ^^roleme et la couleur que vous souhaitez. \n \n Comme ceci : ^^roleme [ nom du rôles ]\n \n Voici la palette de couleurs à votre disposition :")  
-
-}})})
